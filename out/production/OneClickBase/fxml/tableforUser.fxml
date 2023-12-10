@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" styleClass="box" stylesheets="@../CSS/tableforUser.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.tableforUserController">
+   <children>
+      <TableView fx:id="tableView" focusTraversable="false" layoutX="52.0" layoutY="105.0" prefHeight="535.0" prefWidth="696.0" styleClass="Table-view">
+         <columns>
+            <TableColumn fx:id="cityNameCol" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="City Name" />
+            <TableColumn fx:id="ResDateCol" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="Reservation Date" />
+            <TableColumn fx:id="withHotelCol" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="With Hotel ?" />
+            <TableColumn fx:id="withCarCol" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="With Car ?" />
+            <TableColumn fx:id="hotelNameCol" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="Hotel Name" />
+            <TableColumn fx:id="carNameCol" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="Car Name" />
+         </columns></TableView>
+      <Button fx:id="backtoUser" layoutX="713.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackToUser" onMouseEntered="#changegif" onMouseExited="#returnpic" styleClass="mybutton2" />
+      <Button fx:id="deleteUser" layoutX="52.0" layoutY="69.0" mnemonicParsing="false" onAction="#deleteEvent" styleClass="mybutton2" text="Button" />
+      <Button fx:id="SearchUser" layoutX="150.0" layoutY="69.0" mnemonicParsing="false" onAction="#searchEvent" styleClass="mybutton2" />
+      <Label fx:id="username" layoutX="168.0" layoutY="7.0" prefHeight="38.0" prefWidth="463.0" styleClass="labels" text="Label" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <DatePicker fx:id="dateField" editable="false" layoutX="193.0" layoutY="69.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter Date To Search" styleClass="da" />
+   </children>
+</AnchorPane>

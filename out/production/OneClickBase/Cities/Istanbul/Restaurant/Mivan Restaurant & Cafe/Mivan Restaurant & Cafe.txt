@@ -1,0 +1,6 @@
+name : Mivan Restaurant & Cafe 
+location : Emin Sinan, Piyer Loti Cd. No:34, 34130 Fatih/İstanbul
+desc : 
+Service options: In-place dining · Drive-in ordering service · Contactless delivery
+Closes at 12:30 AM
+Health and Safety: Employees wear masks Staff undergo temperature checks Staff are required to sanitize surfaces in between customer visits. ·

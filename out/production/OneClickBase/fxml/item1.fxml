@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#onClick" onMouseEntered="#changeToGIF" onMouseExited="#changeToDefault" prefHeight="200.0" prefWidth="350.0" stylesheets="@../CSS/CityItem.CSS" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.item1controller">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="350.0">
+         <children>
+            <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="350.0" />
+            <Label fx:id="cityName" layoutX="137.0" layoutY="14.0" styleClass="up2label" text="Label" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

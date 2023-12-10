@@ -1,0 +1,4 @@
+name : Mehmetbey Alabalık Restaurant ve Tesisleri
+location : Mehmetbey, 46600 Goksun/Kahramanmaras
+desc : 
+Working hours: 8 AM - 12 PM

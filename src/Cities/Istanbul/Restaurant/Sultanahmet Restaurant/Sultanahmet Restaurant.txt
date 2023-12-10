@@ -1,0 +1,5 @@
+name :Sultanahmet Restaurant
+location :Little Hagia Sophia District, Martyr. Mehmet Pasha. No:14, 34122 Fatih/Istanbul
+desc : 
+Service options: In-place eating · Contactless delivery
+Closes at 11:30 pm

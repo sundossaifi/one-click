@@ -1,0 +1,3 @@
+name : Club Hotel Sera
+rate : 5
+location : Guzeloba, Lara Cd., 07230 Muratpasa/Antalya

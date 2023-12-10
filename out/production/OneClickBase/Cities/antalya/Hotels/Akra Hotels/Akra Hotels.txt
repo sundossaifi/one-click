@@ -1,0 +1,3 @@
+name : Akra Hotels
+location : Sirinyali, Lara Cd. No: 24, 07100 Muratpasa/Antalya.
+rate : 5

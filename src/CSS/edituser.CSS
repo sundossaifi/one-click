@@ -1,0 +1,73 @@
+.SignInButton
+{
+    -fx-background-radius: 5em;
+         -fx-min-width: 50px;
+         -fx-min-height: 50px;
+         -fx-max-width: 50px;
+         -fx-max-height: 50px;
+         -fx-cursor:hand;
+}
+
+.Save
+{
+
+
+-fx-background-radius: 20em;
+         -fx-min-width: 150px;
+         -fx-min-height: 50px;
+         -fx-max-width: 150px;
+         -fx-max-height: 50px;
+-fx-font-size:18;
+-fx-font-weight:bold;
+-fx-font-style:italic;
+-fx-font-family:"Lucida Handwriting";
+ -fx-text-fill: #6F4C5B;
+ -fx-cursor:hand;
+
+}
+.text
+{
+    linear-gradient(#6F4C5B 50%, white 100%),
+         radial-gradient(center 50% -40%, radius 200%, #6F4C5B 45%, #6F4C5B 50%);
+     -fx-background-radius: 30;
+     -fx-background-insets: 0,1,1;
+ }
+.an{
+
+    -fx-background-color: #c8c6c6;
+    -fx-background-radius: 100px;
+    -fx-background-image:url('../images/marble.jpeg');
+    -fx-background-size: 100% 100%;
+}
+.box1{
+    -fx-background-color: #6f4c5b;
+    -fx-background-radius: 100px;
+}
+
+.mybutton2 {
+ -fx-background-color:#c8c6c6;
+
+   -fx-background-repeat:no-repeat;
+   -fx-background-color: transparent;
+   -fx-cursor:hand;
+}
+.labels
+{
+-fx-font-size:20;
+-fx-font-family:"Lucida Handwriting";
+}
+
+ .date-picker
+  {
+     -fx-background-radius: 10 10 10 10;
+     -fx-cursor: hand;
+ }
+ .date-picker > .text-field
+  {
+     -fx-background-radius: 10 0 0 10;
+ }
+
+ .date-picker > .arrow-button
+  {
+     -fx-background-radius: 0 10 10 0;
+ }

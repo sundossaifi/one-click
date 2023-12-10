@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoadingAnimationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="250.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 30px; -fx-arc-width: 30px; -fx-stroke: none; -fx-fill: #6f4c5b;" width="400.0" />
+      <Circle fx:id="circle2" fill="#3280c900" layoutX="160.0" layoutY="134.0" radius="16.0" stroke="#019992" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle3" fill="#3280c900" layoutX="200.0" layoutY="134.0" radius="16.0" stroke="#40ee77" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle4" fill="#3280c900" layoutX="239.0" layoutY="134.0" radius="16.0" stroke="#ffb001" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle1" fill="#3280c900" layoutX="122.0" layoutY="134.0" radius="16.0" stroke="#fb475e" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle5" fill="#3280c900" layoutX="278.0" layoutY="134.0" radius="16.0" stroke="#b83c70" strokeType="INSIDE" strokeWidth="10.0" />
+      <Label layoutX="105.0" layoutY="173.0" prefHeight="50.0" prefWidth="157.0" text="Loading" textFill="#c8c6c6">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="263.0" layoutY="159.0" text="." textFill="#c8c6c6">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="294.0" layoutY="158.0" text="." textFill="#c8c6c6">
+         <font>
+            <Font name="System Italic" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="278.0" layoutY="158.0" text="." textFill="#c8c6c6">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

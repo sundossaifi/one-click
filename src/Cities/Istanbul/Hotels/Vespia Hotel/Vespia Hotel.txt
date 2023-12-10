@@ -1,0 +1,3 @@
+name : Vespia Hotel 
+location : Beylikduzu/Istanbul
+Rate : 4

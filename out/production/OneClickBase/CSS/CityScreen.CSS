@@ -1,0 +1,42 @@
+.background
+{
+ -fx-background-color:#c8c6c6;
+
+}
+.pane
+{
+-fx-background-color:#6f4c5b;
+}
+.uplabel
+{
+-fx-font-size:30;
+-fx-font-family:"Lucida Handwriting";
+-fx-text-fill: #c8c6c6;
+}
+.up2label
+{
+-fx-font-size:18;
+-fx-font-family:"Lucida Handwriting";
+-fx-text-fill: #c8c6c6;
+}
+
+.mybutton2 {
+ -fx-background-color:#c8c6c6;
+
+   -fx-background-repeat:no-repeat;
+   -fx-background-color: transparent;
+   -fx-cursor: hand;
+}
+.text
+{
+    linear-gradient(#6F4C5B 50%, white 100%),
+         radial-gradient(center 50% -40%, radius 200%, #6F4C5B 45%, #6F4C5B 50%);
+     -fx-background-radius: 30;
+     -fx-background-insets: 0,1,1;
+ }
+
+ .an
+ {
+      -fx-background-image:url('../images/marble.jpeg');
+     -fx-background-size: 100% 100%;
+ }

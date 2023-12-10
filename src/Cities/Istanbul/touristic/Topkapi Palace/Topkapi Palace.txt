@@ -1,0 +1,3 @@
+name : Topkapi Palace
+location :Lifeguard, 34122 Fatih/Istanbul,
+desc :A large, grandiose palace from the 15th century that was the seat of the sultans for 400 years and houses Ottoman treasures

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" stylesheets="@../CSS/LogInScreen.CSS" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LogInScreencontroller">
+    <children>
+        <AnchorPane fx:id="anchorpaneleft" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" styleClass="backgroundsize1">
+            <children>
+                <Label fx:id="welcomelabel" layoutX="44.0" layoutY="154.0" prefHeight="50.0" prefWidth="298.0" styleClass="welcomelabel" text="welcome back !" textFill="#c8c6c6" />
+                <Label fx:id="hellofriendlabel" layoutX="62.0" layoutY="153.0" prefHeight="58.0" prefWidth="262.0" styleClass="welcomelabel" text="Hello Friend!" textFill="#c8c6c6" />
+                <Label fx:id="missedlabel" layoutX="73.0" layoutY="210.0" styleClass="missedlabel" text="Are you exiting to travel with us ?" textFill="#c8c6c6" />
+                <Label fx:id="enjoylabel" layoutX="150.0" layoutY="236.0" styleClass="missedlabel" text="Enjoy your journey" textFill="#c8c6c6" />
+                <Button fx:id="signupbutton" layoutX="114.0" layoutY="492.0" mnemonicParsing="false" onAction="#btn2" prefHeight="58.0" prefWidth="147.0" styleClass="SignInButton" text="Sign Up" />
+            <Label fx:id="personaldetails" layoutX="60.0" layoutY="208.0" prefHeight="30.0" prefWidth="280.0" styleClass="personaldetails" text="Enter your personal details" textFill="#c8c6c6" />
+            <Label fx:id="startj" layoutX="108.0" layoutY="242.0" styleClass="personaldetails" text="And start journey with us" textFill="#c8c6c6" />
+            <Button fx:id="signinbutton" layoutX="114.0" layoutY="492.0" mnemonicParsing="false" onAction="#btn" prefHeight="58.0" prefWidth="147.0" styleClass="SignInButton" text="Sign In" />
+            <Pane layoutX="88.0" layoutY="301.0" prefHeight="167.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="167.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="200.0" />
+                  <ImageView fitHeight="150.0" fitWidth="180.0" layoutX="10.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/travel.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            </children></AnchorPane>
+        <AnchorPane fx:id="anchorpaneright" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" styleClass="backgroundsize2">
+         <children>
+            <Label fx:id="creataccountlabel" layoutX="54.0" layoutY="155.0" styleClass="ceataccountlabel" text="Create Account " textFill="#6f4c5b" />
+            <Label fx:id="nameLabel" layoutX="63.0" layoutY="219.0" styleClass="signuplabels" text="Name" textFill="#6f4c5b" />
+            <Label fx:id="signupEmailLabel" layoutX="62.0" layoutY="339.0" styleClass="signuplabels" text="Email" textFill="#6f4c5b" />
+            <Label fx:id="signupPasswordLabel" layoutX="46.0" layoutY="369.0" styleClass="signuplabels" text="Password" textFill="#6f4c5b" />
+            <Label fx:id="oneclick" layoutX="3.0" layoutY="155.0" prefHeight="57.0" prefWidth="400.0" styleClass="ceataccountlabel" text="Sign In To One Click" textFill="#6f4c5b" />
+            <Label fx:id="confirmPasswordLabel" layoutX="5.0" layoutY="398.0" prefHeight="32.0" prefWidth="200.0" styleClass="signuplabels" text="confirm password" textFill="#6f4c5b" />
+            <TextField fx:id="nameField" layoutX="202.0" layoutY="221.0" prefHeight="26.0" prefWidth="166.0" promptText="Name" styleClass="signuptextfield" />
+            <TextField fx:id="ssnField" layoutX="202.0" layoutY="251.0" prefHeight="26.0" prefWidth="166.0" promptText="SSN" styleClass="signuptextfield" />
+            <TextField fx:id="countryField" layoutX="202.0" layoutY="281.0" prefHeight="26.0" prefWidth="166.0" promptText="Country" styleClass="signuptextfield" />
+            <TextField fx:id="signUpEmailField" layoutX="202.0" layoutY="341.0" prefHeight="26.0" prefWidth="166.0" promptText="Email" styleClass="signuptextfield" />
+            <PasswordField fx:id="signUpPasswordField" layoutX="202.0" layoutY="371.0" prefHeight="26.0" prefWidth="166.0" promptText="Password" styleClass="signuptextfield" />
+            <PasswordField fx:id="signUpConfirmPasswordField" layoutX="202.0" layoutY="401.0" prefHeight="26.0" prefWidth="166.0" promptText="Confirm-Password" styleClass="signuptextfield" />
+            <DatePicker fx:id="dobField" editable="false" layoutX="202.0" layoutY="311.0" prefHeight="26.0" prefWidth="166.0" promptText="Date Of Birth" styleClass="date-picker" />
+            <Label fx:id="uploadPhotoLabel" layoutX="22.0" layoutY="427.0" prefHeight="43.0" prefWidth="166.0" styleClass="signuplabels" text="Upload-Photo" textFill="#6f4c5b" />
+            <Button fx:id="uploadButton" layoutX="205.0" layoutY="434.0" mnemonicParsing="false" onAction="#uploadEvent" prefHeight="7.0" prefWidth="2.0" styleClass="UploadButton" text="🠹" />
+            <Label fx:id="ssnLabel" layoutX="75.0" layoutY="249.0" styleClass="signuplabels" text="SSN" textFill="#6f4c5b" />
+            <Label fx:id="countryLabel" layoutX="52.0" layoutY="279.0" styleClass="signuplabels" text="Country" textFill="#6f4c5b" />
+            <Label fx:id="dobLabel" layoutX="24.0" layoutY="309.0" styleClass="signuplabels" text="Date Of Birth" textFill="#6f4c5b" />
+            <Button fx:id="signinbuttonenter" layoutX="114.0" layoutY="492.0" mnemonicParsing="false" onAction="#signInEvent" prefHeight="58.0" prefWidth="147.0" styleClass="SignUpButton" text="Sign In" />
+            <Button fx:id="signupbuttonenter" layoutX="114.0" layoutY="492.0" mnemonicParsing="false" onAction="#signUpEvent" onMouseClicked="#btn2" prefHeight="58.0" prefWidth="147.0" styleClass="SignUpButton" text="Sign Up" />
+            <Label fx:id="chooseImgLabel" layoutX="239.0" layoutY="437.0" text="Choose-Img" textFill="#6f4c5b">
+               <font>
+                  <Font name="Lucida Handwriting Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="signinpass" layoutX="52.0" layoutY="339.0" styleClass="signinlabels" text="Password" textFill="#6f4c5b" />
+            <Label fx:id="signinemail" layoutX="52.0" layoutY="309.0" prefHeight="38.0" prefWidth="82.0" styleClass="signinlabels" text="Email" textFill="#6f4c5b" />
+            <TextField fx:id="signInEmailField" layoutX="202.0" layoutY="311.0" prefHeight="26.0" prefWidth="166.0" promptText="Email" styleClass="signuptextfield" />
+            <PasswordField fx:id="signInPasswordField" layoutX="202.0" layoutY="341.0" prefHeight="26.0" prefWidth="166.0" promptText="Password" styleClass="signuptextfield" />
+            <Button fx:id="forgetpassword" layoutX="105.0" layoutY="371.0" mnemonicParsing="false" onAction="#forgetPasswordEvent" prefHeight="30.0" prefWidth="166.0" styleClass="forgetpassword" text="Forget Your Password" textFill="#6f4c5b" />
+            <CheckBox fx:id="checkBox" layoutX="276.0" layoutY="376.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="15.0">
+               <tooltip>
+                  <Tooltip fx:id="tooltip" text="Empty Tooltip" />
+               </tooltip></CheckBox>
+            <ImageView fx:id="imgView" fitHeight="18.0" fitWidth="17.0" layoutX="299.0" layoutY="376.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/eye.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+.Background
+{
+    -fx-background-image: url('../images/marble.jpeg');
+    -fx-background-size: 100% 100%;
+}
+.discoverlabel
+{
+-fx-font-size:23;
+-fx-font-weight:bold;
+-fx-font-style:italic;
+-fx-font-family:"Lucida Handwriting";
+}
+.OneClicklabel
+{
+-fx-font-size:33;
+-fx-font-weight:bold;
+-fx-font-style:italic;
+-fx-font-family:"Lucida Handwriting";
+-fx-fill: #c8c6c6;
+}
+.Rectangle
+{
+    -fx-stroke:none;
+    -fx-arc-width: 30px;
+    -fx-arc-height: 30px;
+
+}
+.buttonf
+{
+ -fx-font-size:18;
+ -fx-font-family:"Lucida Handwriting";
+     -fx-background-color:
+         #6F4C5B,
+         linear-gradient(#6F4C5B 50%, white 100%),
+         radial-gradient(center 50% -40%, radius 200%, #C8C6C6 45%, #C8C6C6 50%);
+     -fx-background-radius: 30;
+     -fx-background-insets: 0,1,1;
+     -fx-text-fill: black;
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+     -fx-text-fill: #6F4C5B;
+}
+.buttons:pressed {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+}
+.cursor_hand
+{
+-fx-cursor:hand;
+}
+.headerbuttons
+{
+-fx-background-color:#c8c6c6;
+-fx-background-repeat:no-repeat;
+-fx-background-color: transparent;
+
+}

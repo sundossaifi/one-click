@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentContainer" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GoodByeController">
+   <children>
+      <Label layoutX="162.0" layoutY="195.0" prefHeight="154.0" prefWidth="508.0" text="GoodBye" textFill="#6f4c5b">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="96.0" />
+         </font>
+      </Label>
+      <Circle fx:id="circle2" fill="#3280c900" layoutX="360.0" layoutY="395.0" radius="16.0" stroke="#019992" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle3" fill="#3280c900" layoutX="400.0" layoutY="395.0" radius="16.0" stroke="#40ee77" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle4" fill="#3280c900" layoutX="439.0" layoutY="395.0" radius="16.0" stroke="#ffb001" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle1" fill="#3280c900" layoutX="322.0" layoutY="395.0" radius="16.0" stroke="#fb475e" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="circle5" fill="#3280c900" layoutX="478.0" layoutY="395.0" radius="16.0" stroke="#b83c70" strokeType="INSIDE" strokeWidth="10.0" />
+   </children>
+</AnchorPane>

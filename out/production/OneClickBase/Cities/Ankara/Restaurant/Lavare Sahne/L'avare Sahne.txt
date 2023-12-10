@@ -1,0 +1,6 @@
+name : Lavare Sahne
+location : Cankaya/Ankara
+desc : 
+Service options In-place eating Take-away Delivery service
+Health and Safety: Reservations Required Mask Required Staff Wear Masks
+Closes at 11 pm

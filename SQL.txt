@@ -1,0 +1,185 @@
+CREATE TABLE USERS
+(
+    NAME VARCHAR2(100) NOT NULL,
+    SSN INTEGER NOT NULL,
+    EMAIL VARCHAR2(320) NOT NULL,
+    PASSWORD VARCHAR2(320) NOT NULL,
+    PIC VARCHAR2(320) NOT NULL,
+    TYPE VARCHAR2(1) NOT NULL,
+    COUNTRY VARCHAR2(100) NOT NULL,
+    DOB DATE NOT NULL,
+    CONSTRAINT USER_PK PRIMARY KEY(SSN),
+    CONSTRAINT UNIQUE_EMAIL UNIQUE(EMAIL),
+    CONSTRAINT CHECKED_TYPE CHECK(TYPE='A' OR TYPE='U')
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE CITY
+(
+   CITY_ID INTEGER  NOT NULL,
+   NAME VARCHAR2(100) NOT NULL,
+   GIF_PIC VARCHAR2(320) NOT NULL,
+   DESCRIPTION VARCHAR2(320) NOT NULL,
+   pic_path varchar2(320) not null,
+   CONSTRAINT CITY_PK PRIMARY KEY(CITY_ID),
+   CONSTRAINT UNIQUE_NAME UNIQUE(NAME),
+   CONSTRAINT UNIQUE_GIF UNIQUE(GIF_PIC),
+   constraint unique_city_pic unique(pic_path)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE CAR
+(
+    CAR_ID INTEGER NOT NULL,
+    NAME VARCHAR2(100) NOT NULL,
+    TYPE VARCHAR2(100) NOT NULL,
+    COLOR VARCHAR2(50) NOT NULL,
+    PRICE INTEGER NOT NULL,
+    CID INTEGER NOT NULL,
+    CONSTRAINT CAR_PK PRIMARY KEY(CAR_ID),
+    CONSTRAINT CAR_FK FOREIGN KEY(CID) REFERENCES CITY(CITY_ID),
+    CONSTRAINT UNIQUE_TYPE UNIQUE(TYPE)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE CAR_PICTURES
+(
+    ID INTEGER NOT NULL,
+    PIC VARCHAR2(320) NOT NULL,
+    CAID INTEGER NOT NULL,
+    CONSTRAINT CAR_PICTURES_PK PRIMARY KEY(ID),
+    CONSTRAINT CAR_PICTURES_FK FOREIGN KEY(CAID) REFERENCES CAR(CAR_ID),
+    CONSTRAINT UNIQUE_CAP_PIC UNIQUE(PIC)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE HOTEL
+(
+    HOTEL_ID INTEGER NOT NULL,
+    NAME VARCHAR2(100) NOT NULL,
+    RATE INTEGER NOT NULL,
+    LOCATION VARCHAR2(320) NOT NULL,
+    PIC VARCHAR2(320) NOT NULL,
+    CID INTEGER NOT NULL,
+    CONSTRAINT HOTEL_PK PRIMARY KEY(HOTEL_ID),
+    CONSTRAINT HOTEL_FK FOREIGN KEY(CID) REFERENCES CITY(CITY_ID),
+    CONSTRAINT UNIQUE_HOTEL_PIC UNIQUE(PIC),
+    CONSTRAINT CHECKED_RATE CHECK(RATE>0 AND RATE<6)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE RESTAURANTS
+(
+    RESTAURANT_ID INTEGER NOT NULL,
+    NAME VARCHAR2(100) NOT NULL,
+    LOCATION VARCHAR2(320) NOT NULL,
+    DESCRIPTION VARCHAR2(320) NOT NULL,
+    CID INTEGER NOT NULL,
+    PIC VARCHAR2(320) NOT NULL,
+    CONSTRAINT RESTAURANTS_PK PRIMARY KEY(RESTAURANT_ID),
+    CONSTRAINT RESTAURANTS_FK FOREIGN KEY(CID) REFERENCES CITY(CITY_ID),
+    constraint unique_RESTAURANT_pic unique(pic)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE TOURISTIC_PLACE
+(
+    TOURISTIC_ID INTEGER NOT NULL,
+    NAME VARCHAR2(100) NOT NULL,
+    LOCATION VARCHAR2(320) NOT NULL,
+    DESCRIPTION VARCHAR2(320) NOT NULL,
+    CID INTEGER NOT NULL,
+    CONSTRAINT TOURISTIC_PLACE_PK PRIMARY KEY(TOURISTIC_ID),
+    CONSTRAINT TOURISTIC_PLACE_FK FOREIGN KEY(CID) REFERENCES CITY(CITY_ID)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE TOURISTIC_PLACES_PICTURES
+(
+    ID INTEGER NOT NULL,
+    PIC VARCHAR2(320) NOT NULL,
+    TID INTEGER NOT NULL,
+    CONSTRAINT TOURISTIC_PLACES_PICTURES_PK PRIMARY KEY(ID),
+    CONSTRAINT TOURISTIC_PLACES_PICTURES_FK FOREIGN KEY(TID) REFERENCES TOURISTIC_PLACE(TOURISTIC_ID),
+    CONSTRAINT UNIQUE_TOURISTIC_PLACES_PIC UNIQUE(PIC)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE RESERVATION
+(
+    RESERVATION_ID INTEGER NOT NULL,
+    RESERVATION_DATE DATE NOT NULL,
+    CID INTEGER NOT NULL,
+    HOTEL_FLAG VARCHAR2(1) NOT NULL,
+    CAR_FLAG VARCHAR2(1) NOT NULL,
+    USSN INTEGER NOT NULL,
+    CONSTRAINT RESERVATION_PK PRIMARY KEY(RESERVATION_ID),
+    CONSTRAINT RESERVATION_CITY_FK FOREIGN KEY(CID) REFERENCES CITY(CITY_ID),
+    CONSTRAINT RESERVATION_USER_FK FOREIGN KEY(USSN) REFERENCES USERS(SSN),
+    CONSTRAINT CHECK_HOTEL_FLAG CHECK(HOTEL_FLAG='T' OR HOTEL_FLAG='F'),
+    CONSTRAINT CHECK_CAR_FLAG CHECK(CAR_FLAG='T' OR CAR_FLAG='F')
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE RESERVED_HOTELS
+(
+   ID INTEGER NOT NULL,
+   HID INTEGER NOT NULL,
+   RID INTEGER NOT NULL,
+   CONSTRAINT RESERVED_HOTELS_PK PRIMARY KEY(ID),
+   CONSTRAINT RESERVED_HOTELS_HID_FK FOREIGN KEY(HID) REFERENCES HOTEL(HOTEL_ID),
+   CONSTRAINT RESERVED_HOTELS_RID_FK FOREIGN KEY(RID) REFERENCES RESERVATION(RESERVATION_ID)
+);
+=======================================================================================================================================================================================================================
+CREATE TABLE RESERVED_CARS
+(
+   ID INTEGER NOT NULL,
+   CAID INTEGER NOT NULL,
+   RID INTEGER NOT NULL,
+   CONSTRAINT RESERVED_CARS_PK PRIMARY KEY(ID),
+   CONSTRAINT RESERVED_CARS_CAID_FK FOREIGN KEY(CAID) REFERENCES CAR(CAR_ID),
+   CONSTRAINT RESERVED_CARS_RID_FK FOREIGN KEY(RID) REFERENCES RESERVATION(RESERVATION_ID)
+);
+=======================================================================================================================================================================================================================
+CREATE SEQUENCE ID_SEQ
+    INCREMENT BY 1
+    START WITH 1
+    NOCYCLE
+    NOCACHE;
+=======================================================================================================================================================================================================================
+create user c##sundos_yaqeen identified by 11223344;
+grant connect,resource to c##sundos_yaqeen;
+GRANT UNLIMITED TABLESPACE TO c##sundos_yaqeen;
+=======================================================================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

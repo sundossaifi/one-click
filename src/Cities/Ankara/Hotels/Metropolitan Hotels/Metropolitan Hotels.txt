@@ -1,0 +1,3 @@
+Rate : 4
+Location :Cankaya / Ankara
+name : Metropolitan Hotels

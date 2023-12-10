@@ -1,0 +1,6 @@
+location : Cankaya/Ankara
+name : Trilye Restaurant
+desc : 
+Service options: In-place eating ,Car delivery,Contactless delivery
+Reservations are required
+Closes at 12 am

@@ -1,0 +1,3 @@
+Rate : 4
+name : Marriott Hotel
+location :Marriott Hotel Ankara is perfectly located in the center of the capital, close to government institutions, embassies and historical beauties.

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anc" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="800.0" styleClass="an" stylesheets="@../CSS/user.CSS" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.userScreencontroller">
+   <children>
+      <AnchorPane layoutX="79.0" layoutY="112.0" prefHeight="533.0" prefWidth="641.0" styleClass="box">
+         <children>
+            <Label layoutX="47.0" layoutY="69.0" prefHeight="53.0" prefWidth="206.0" styleClass="labels" text="Name : " textFill="#c8c6c6" />
+            <Label fx:id="namelabel" layoutX="163.0" layoutY="69.0" prefHeight="53.0" prefWidth="295.0" styleClass="labels" textFill="#c8c6c6" />
+            <Label layoutX="44.0" layoutY="208.0" styleClass="labels" text="Email :" textFill="#c8c6c6" />
+            <Label fx:id="emaillabel" layoutX="150.0" layoutY="202.0" prefHeight="53.0" prefWidth="461.0" styleClass="labels" textFill="#c8c6c6" />
+            <Label layoutX="47.0" layoutY="267.0" prefHeight="53.0" prefWidth="174.0" styleClass="labels" text="Birth Date :" textFill="#c8c6c6" />
+            <Label fx:id="birthdatelabel" layoutX="230.0" layoutY="270.0" prefHeight="47.0" prefWidth="243.0" styleClass="labels" textFill="#c8c6c6" />
+            <Label layoutX="47.0" layoutY="343.0" prefHeight="40.0" prefWidth="137.0" styleClass="labels" text="Country :" textFill="#c8c6c6" />
+            <Label fx:id="countrylabel" layoutX="194.0" layoutY="343.0" prefHeight="40.0" prefWidth="233.0" styleClass="labels" textFill="#c8c6c6" />
+            <Button fx:id="editbutton" layoutX="545.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToEditProfileScreen" onMouseEntered="#changetogif2" onMouseExited="#changetodefult2" prefHeight="40.0" prefWidth="52.0" styleClass="mybutton2" />
+            <Label layoutX="47.0" layoutY="140.0" prefHeight="40.0" prefWidth="95.0" styleClass="labels" text="SSN :" textFill="#c8c6c6" />
+            <Label fx:id="ssnlabel" layoutX="136.0" layoutY="143.0" prefHeight="40.0" prefWidth="227.0" styleClass="labels" textFill="#c8c6c6" />
+            <Button fx:id="tablebutton" layoutX="90.0" layoutY="450.0" mnemonicParsing="false" onAction="#GoToTable" onMouseEntered="#gotoarr" onMouseExited="#Backto" styleClass="reserbutton" textFill="#c8c6c6">
+               <font>
+                  <Font name="Lucida Handwriting Italic" size="12.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="400.0" layoutY="83.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="favbutton" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="52.0" styleClass="mybutton2" />
+      <Button fx:id="homebutton" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHomeScreen" onMouseEntered="#changeToGIF" onMouseExited="#changeToDefault" prefHeight="31.0" prefWidth="30.0" styleClass="mybutton2" />
+   </children>
+</AnchorPane>

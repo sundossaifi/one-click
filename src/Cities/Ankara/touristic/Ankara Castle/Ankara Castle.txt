@@ -1,0 +1,3 @@
+name : Ankara Castle
+location : Altindag/Ankara
+desc : Ankara, Turkey. It was founded in the 8th century BC, 19th century, 19th century, 19th century, 19th century. The castle again underwent renovations in antiquity and Roman, Seljuk and Ottoman study.

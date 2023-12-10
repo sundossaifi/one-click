@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="588.0" prefWidth="553.0" stylesheets="@../CSS/adminscreen.CSS" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TourTableScreenController">
+    <children>
+        <TableView fx:id="tourTable" focusTraversable="false" layoutX="1.0" layoutY="53.0" prefHeight="535.0" prefWidth="552.0" styleClass="Table-view">
+            <columns>
+                <TableColumn fx:id="idCol" editable="false" prefWidth="110.4" sortable="false" text="ID" />
+                <TableColumn fx:id="nameCol" editable="false" prefWidth="110.4" sortable="false" text="Name" />
+                <TableColumn fx:id="locationCol" editable="false" prefWidth="110.4" sortable="false" text="Location " />
+                <TableColumn fx:id="descriptionCol" editable="false" prefWidth="110.4" sortable="false" text="Description " />
+                <TableColumn fx:id="cidCol" editable="false" prefWidth="110.4" sortable="false" text="City ID" />
+            </columns>
+        </TableView>
+      <Button fx:id="add" layoutX="224.0" layoutY="11.0" mnemonicParsing="false" onAction="#addEvent" prefHeight="25.0" prefWidth="106.0" text="Button" AnchorPane.bottomAnchor="552.0" AnchorPane.topAnchor="11.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="delete" layoutX="339.0" layoutY="11.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="25.0" prefWidth="106.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="search" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchEvent" styleClass="mybutton2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="searchField" layoutX="39.0" layoutY="10.0" prefHeight="33.0" prefWidth="177.0" promptText="Type here to search" />
+    </children>
+</AnchorPane>

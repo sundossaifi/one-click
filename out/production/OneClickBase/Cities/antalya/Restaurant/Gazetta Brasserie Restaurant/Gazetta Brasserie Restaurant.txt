@@ -1,0 +1,5 @@
+name : Gazetta Brasserie Restaurant
+location : Barbaros Mah Muratpaşa Opposite Alp Paşa Hotel, Accountci Sk. No:32, 07100 Muratpasa/Antalya,
+desc : 
+Service options: In-place eating · No delivery service available
+Closes at 12 am

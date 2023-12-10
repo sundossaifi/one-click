@@ -1,0 +1,3 @@
+name : Sultan Ahmed Mosque
+location : Sultan Ahmet, Atmeydanı Cd. No:7, 34122 Fatih/İstanbul, Turkey
+desc : A famous landmark known as the Blue Mosque was built in 1616 and houses the tomb of its founder

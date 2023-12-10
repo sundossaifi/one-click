@@ -1,0 +1,3 @@
+name : Aya Sofia
+location : Sultan Ahmet, Ayasofya Meydanı No:1, 34122 Fatih/İstanbul
+desc : Open 24 hours

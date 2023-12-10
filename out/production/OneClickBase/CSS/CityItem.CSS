@@ -1,0 +1,14 @@
+.Rectangle
+ {
+    -fx-arc-width: 30px;
+    -fx-arc-height: 30px;
+    -fx-stroke: none;
+    -fx-cursor: hand;
+ }
+
+ .up2label
+ {
+ -fx-font-size:25;
+ -fx-font-family:"Lucida Handwriting";
+ -fx-text-alignment:center;
+ }

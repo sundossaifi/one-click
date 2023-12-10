@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentContainer" prefHeight="700" prefWidth="800.0" styleClass="Background" stylesheets="@../CSS/OptionsScreen.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RestaurantController">
+    <children>
+        <Pane prefHeight="100.0" prefWidth="800.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f4c5b" height="84.0" layoutX="38.0" layoutY="8.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="toprectangle" width="711.0" />
+                <Label layoutX="324.0" layoutY="4.0" prefHeight="41.0" prefWidth="181.0" text="One Click" textFill="#c8c6c6">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="29.0" />
+                    </font>
+                </Label>
+                <HBox layoutX="57.0" layoutY="28.0" prefHeight="49.0" prefWidth="200.0">
+                    <opaqueInsets>
+                        <Insets bottom="10.0" top="10.0" />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                    </padding>
+                    <children>
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchEvent" text="search" />
+                        <TextField fx:id="searchField" promptText="Type here to search" />
+                    </children>
+                </HBox>
+                <Label layoutX="381.0" layoutY="50.0" prefHeight="33.0" prefWidth="164.0" text="Your way to turkey..." textFill="#c8c6c6">
+                    <font>
+                        <Font name="Lucida Handwriting Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="backButton" layoutX="668.0" layoutY="15.0" mnemonicParsing="false" onAction="#backtocityoptions" onMouseEntered="#changback" onMouseExited="#returnback" styleClass="headerbuttons" />
+            </children>
+        </Pane>
+        <HBox layoutX="14.0" layoutY="108.0" prefHeight="570.0" prefWidth="245.0">
+            <children>
+                <ScrollPane focusTraversable="false" hbarPolicy="NEVER" prefHeight="570.0" prefWidth="250.0" style="-fx-background-color: rgba(0,0,0,0);" styleClass="Scroll-pane" vbarPolicy="NEVER">
+                    <content>
+                        <GridPane fx:id="gridPane" prefHeight="0.0" prefWidth="0.0">
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </HBox>
+        <Pane fx:id="itemPane" layoutX="274.0" layoutY="108.0" prefHeight="570.0" prefWidth="494.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f4c5b" height="511.0" layoutX="18.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" styleClass="toprectangle" width="458.0" />
+                <ImageView fx:id="itemPicture" fitHeight="260.0" fitWidth="304.0" layoutX="93.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+                <TextArea fx:id="itemInformation" editable="false" layoutX="82.0" layoutY="320.0" prefHeight="201.0" prefWidth="337.0" wrapText="true" />
+                <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#c8c6c6" height="211.0" layoutX="40.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle2" width="415.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

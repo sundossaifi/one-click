@@ -1,0 +1,5 @@
+name : Goksu Restaurant
+location : Cankaya/Ankara
+desc : 
+Service options: In-place eating · Contactless delivery
+Closes at 12 am

@@ -1,0 +1,22 @@
+.appnamelabel
+{
+    -fx-background-color:#6F4C5B;
+    -fx-font-size:80;
+    -fx-font-variant :small-caps;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+    -fx-font-family:"Lucida Handwriting";
+
+}
+.notelabel
+{
+    -fx-font-size:40;
+    -fx-font-weight:bold;
+    -fx-font-style:italic;
+    -fx-font-family:"Lucida Handwriting";
+}
+.background
+{
+ -fx-background-color:#6F4C5B;
+
+}

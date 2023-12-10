@@ -1,0 +1,53 @@
+.anc{
+    -fx-background-color: #C8C6C6;
+
+}
+.an{
+
+    -fx-background-color: #c8c6c6;
+    -fx-background-radius: 100px;
+    -fx-background-image:url('../images/marble.jpeg');
+
+
+}
+
+.labels
+{
+-fx-font-color: #c8c6c6;
+-fx-font-size:15;
+-fx-font-family:"Lucida Handwriting";
+}
+
+.text
+{
+    linear-gradient(#6F4C5B 50%, white 100%),
+         radial-gradient(center 50% -40%, radius 200%, #6F4C5B 45%, #6F4C5B 50%);
+     -fx-background-radius: 30;
+     -fx-background-insets: 0,1,1;
+      -fx-font-color: #c8c6c6;
+ }
+
+.Save
+{
+
+
+-fx-background-radius: 20em;
+-fx-font-size:15;
+-fx-font-weight:bold;
+-fx-font-style:italic;
+-fx-font-family:"Lucida Handwriting";
+ -fx-text-fill: #6F4C5B;
+
+}
+
+.UploadButton
+ {
+         -fx-font-family:"Lucida Handwriting";
+         -fx-background-color: #c8c6c6;
+         -fx-background-radius: 30;
+         -fx-background-insets: 0,1,1;
+         -fx-text-fill: black;
+         -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+         -fx-text-fill: #6F4C5B;
+         -fx-cursor: hand;
+ }

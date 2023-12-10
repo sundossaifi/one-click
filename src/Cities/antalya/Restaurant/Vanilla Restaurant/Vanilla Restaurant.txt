@@ -1,0 +1,6 @@
+name : Vanilla Restaurant
+location : Barbaros, Accountant Sk. No:33, 07100 Muratpasa/Antalya
+desc : 
+Service options: In-place dining · Take-away · Delivery not available
+Closes at 12 am
+Health and Safety: Mask Required Temperature Check Required Staff Wear Mask Staff Have Temperature Checked Staff Are Required To Sanitize Surfaces In-between Customer Visits.

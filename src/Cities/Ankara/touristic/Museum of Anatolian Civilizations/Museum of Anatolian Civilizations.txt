@@ -1,0 +1,3 @@
+name : Museum of Anatolian Civilizations
+location : Ulus/Altindag/Ankara
+desc : The Museum of Anatolian Civilizations is located south of the Ankara Palace in the Turkish capital, Ankara. The museum was awarded the European Museum Prize for the year 1997

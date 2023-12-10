@@ -1,0 +1,3 @@
+name : Antalya Museum
+location : Bahcelievler, Konyaalti Cd. No:88, 07050 Muratpasa/Antalya
+disc : Large Museum of Anatolian History Displaying Roman and Phrygian Artifacts and Byzantine Mosaic Designs

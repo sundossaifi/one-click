@@ -1,0 +1,3 @@
+name : Titanic Beach Lara Resort
+rate : 5
+location : Guzeloba, Lara Tourism Road, 07230 Muratpasa/Antalya.

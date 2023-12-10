@@ -1,0 +1,4 @@
+name : DoubleTree by Hilton Hotel Istanbul - Moda
+location : Kadikoy/Istanbul
+Rate : 5
+

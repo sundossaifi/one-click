@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="anc" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="800.0" styleClass="an" stylesheets="@../CSS/edituser.CSS" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.editUsercontroller">
+    <children>
+        <AnchorPane layoutX="65.0" layoutY="113.0" prefHeight="533.0" prefWidth="641.0" styleClass="box1">
+            <children>
+                <Label layoutX="47.0" layoutY="57.0" prefHeight="53.0" prefWidth="206.0" styleClass="labels" text="Name : " textFill="#c8c6c6" />
+                <Label layoutX="44.0" layoutY="154.0" styleClass="labels" text="Email :" textFill="#c8c6c6" />
+                <Label layoutX="38.0" layoutY="193.0" prefHeight="53.0" prefWidth="174.0" styleClass="labels" text="Birth Date :" textFill="#c8c6c6" />
+                <Label layoutX="38.0" layoutY="247.0" prefHeight="40.0" prefWidth="137.0" styleClass="labels" text="Country :" textFill="#c8c6c6" />
+                <Label layoutX="44.0" layoutY="106.0" prefHeight="40.0" prefWidth="95.0" styleClass="labels" text="SSN :" textFill="#c8c6c6" />
+            <TextField fx:id="nameField" layoutX="274.0" layoutY="68.0" prefHeight="31.0" prefWidth="246.0" promptText="Name" styleClass="text" />
+            <TextField fx:id="ssnField" editable="false" layoutX="274.0" layoutY="110.0" prefHeight="31.0" prefWidth="246.0" promptText="SSN" styleClass="text" />
+            <TextField fx:id="emailField" layoutX="274.0" layoutY="154.0" prefHeight="31.0" prefWidth="246.0" promptText="Email" styleClass="text" />
+            <TextField fx:id="countryField" layoutX="274.0" layoutY="251.0" prefHeight="31.0" prefWidth="246.0" promptText="Country" styleClass="text" />
+            <Label layoutX="40.0" layoutY="293.0" prefHeight="40.0" prefWidth="220.0" styleClass="labels" text="Old Password : " textFill="#c8c6c6" />
+            <Label layoutX="40.0" layoutY="338.0" prefHeight="40.0" prefWidth="220.0" styleClass="labels" text="New Password :" textFill="#c8c6c6" />
+            <Label layoutX="44.0" layoutY="383.0" prefHeight="40.0" prefWidth="280.0" styleClass="labels" text="Confirm Password :" textFill="#c8c6c6" />
+            <PasswordField fx:id="oldPasswordField" editable="false" layoutX="274.0" layoutY="297.0" prefHeight="32.0" prefWidth="246.0" promptText="Old Password" styleClass="text" />
+            <PasswordField fx:id="newPasswordField" editable="false" layoutX="274.0" layoutY="342.0" prefHeight="31.0" prefWidth="246.0" promptText="New Password" styleClass="text" />
+            <PasswordField fx:id="confirmNewPasswordField" editable="false" layoutX="274.0" layoutY="387.0" prefHeight="32.0" prefWidth="246.0" promptText="Confirm Password" styleClass="text" />
+            <Button fx:id="savebutton" layoutX="171.0" layoutY="454.0" maxHeight="32.0" maxWidth="119.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="50.0" prefWidth="119.0" styleClass="Save" text="Save" />
+            <DatePicker fx:id="dobField" editable="false" layoutX="274.0" layoutY="201.0" prefHeight="31.0" prefWidth="246.0" promptText="Date Of Birth" />
+            <CheckBox fx:id="changePasswordBox" layoutX="527.0" layoutY="304.0" mnemonicParsing="false" onAction="#changePasswordBoxEvent" prefHeight="10.0" prefWidth="16.0">
+               <tooltip>
+                  <Tooltip text="Change Password?" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckBox>
+            <Button fx:id="cancelButton" layoutX="326.0" layoutY="454.0" mnemonicParsing="false" onAction="#reset" styleClass="Save" text="Cancel" />
+            </children></AnchorPane>
+        <Circle fx:id="circle" fill="DODGERBLUE" layoutX="406.0" layoutY="89.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="camerabutton" layoutX="319.0" layoutY="94.0" maxHeight="25.0" maxWidth="44.0" minHeight="47.0" mnemonicParsing="false" onAction="#changePictureEvent" prefHeight="47.0" prefWidth="50.0" styleClass="SignInButton" />
+      <Button fx:id="backbutton" layoutX="715.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToProfileScreenEvent" onMouseEntered="#gif" onMouseExited="#def" styleClass="mybutton2" />
+    </children>
+</AnchorPane>

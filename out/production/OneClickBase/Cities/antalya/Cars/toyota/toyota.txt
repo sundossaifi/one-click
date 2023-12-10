@@ -1,0 +1,3 @@
+name : Toyota
+type : CHR GR
+color : white

@@ -1,0 +1,48 @@
+.Background
+{
+    -fx-background-image: url('../images/marble.jpeg');
+    -fx-background-size: 100% 100%;
+}
+.Rectangle
+{
+    -fx-stroke:none;
+    -fx-arc-width: 30px;
+    -fx-arc-height: 30px;
+
+}
+.headerlabel
+{
+-fx-font-size:14;
+-fx-font-family:"Lucida Handwriting";
+-fx-background-color:#6F4C5B;
+-fx-text-fill: #C8C6C6;
+}
+.dialogbuttons
+{
+-fx-font-size:18;
+-fx-font-family:"Lucida Handwriting";
+    -fx-background-color:
+        #C8C6C6,
+        linear-gradient(#6F4C5B 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #6F4C5B 45%, #6F4C5B 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-text-fill: #C8C6C6;
+}
+
+.date-picker
+   {
+      -fx-background-radius: 10 10 10 10;
+      -fx-cursor: hand;
+  }
+  .date-picker > .text-field
+   {
+      -fx-background-radius: 10 0 0 10;
+  }
+
+  .date-picker > .arrow-button
+   {
+      -fx-background-radius: 0 10 10 0;
+  }

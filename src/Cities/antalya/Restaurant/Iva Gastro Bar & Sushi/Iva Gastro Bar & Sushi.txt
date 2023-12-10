@@ -1,0 +1,5 @@
+name : Iva Gastro Bar & Sushi
+location : Kilincarslan, Hamam Sk. No:13, 07100 Muratpasa/Antalya,
+desc : 
+Service options: In-place dining · Take-away · Contactless delivery
+Closes at 12 am
